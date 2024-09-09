@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кроссворд на 30 вопросов</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .crossword-container {
+            margin-bottom: 20px;
+        }
+        table {
+            border-collapse: collapse;
+        }
+        td {
+            padding: 5px;
+            text-align: center;
+            border: 1px solid #ddd;
+            position: relative;
+        }
+        input {
+            width: 2em;
+            height: 2em;
+            text-align: center;
+            font-size: 1.5em;
+            border: 1px solid #ccc;
+        }
+        .number {
+            font-size: 0.8em;
+            color: #555;
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 2px;
+            background: #f9f9f9;
+            border-bottom: 1px solid #ddd;
+            border-right: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Кроссворд на 30 вопросов</h1>
+
+        <div class="crossword-container">
+            <table id="crossword">
+                <tr>
+                    <td class="number">1</td>
+                    <td><input type="text" maxlength="1" data-answer="я" data-direction="horizontal"></td>
+                    <td><input type="text" maxlength="1" data-answer="в" data-direction="horizontal"></td>
+                    <td><input type="text" maxlength="1" data-answer="а" data-direction="horizontal"></td>
+                    <td><input type="text" maxlength="1" data-answer="с" data-direction="horizontal"></td>
+                    <td><input type="text" maxlength="1" data-answer="т" data-direction="horizontal"></td>
+                    <td><input type="text" maxlength="1" data-answer="а" data-direction="horizontal"></td>
+                    <td><input type="text" maxlength="1" data-answer="н" data-direction="horizontal"></td>
+                    <td><input type="text" maxlength="1" data-answer="д" data-direction="horizontal"></td>
+                    <td><input type="text" maxlength="1" data-answer="а" data-direction="horizontal"></td>
+                    <td><input type="text" maxlength="1" data-answer="я" data-direction="horizontal"></td>
+                    <td><input type="text" maxlength="1" data-answer="в" data-direction="horizontal"></td>
+                    <td><input type="text" maxlength="1" data-answer="а" data-direction="horizontal"></td>
+                    <td><input type="text" maxlength="1" data-answer="с" data-direction="horizontal"></td>
+                    <td><input type="text" maxlength="1" data-answer="т" data-direction="horizontal"></td>
+                </tr>
+                <tr>
+                    <td class="number">2</td>
+                    <td><input type="text" maxlength="1" data-answer="р" data-direction="vertical"></td>
+                    <td><input type="text" maxlength="1" data-answer="о" data-direction="vertical"></td>
+                    <td><input type="text" maxlength="1" data-answer="г" data-direction="vertical"></td>
+                    <td><input type="text" maxlength="1" data-answer="р" data-direction="horizontal"></td>
+                    <td><input type="text" maxlength="1" data-answer="а" data-direction="horizontal"></td>
+                    <td><input type="text" maxlength="1" data-answer="м" data-direction="vertical"></td>
+                    <td><input type="text" maxlength="1" data-answer="м" data-direction="vertical"></td>
+                    <td><input type="text" maxlength="1" data-answer="а" data-direction="horizontal"></td>
+                    <td><input type="text" maxlength="1" data-answer="с" data-direction="horizontal"></td>
+                    <td><input type="text" maxlength="1" data-answer="т" data-direction="horizontal"></td>
+                    <td><input type="text" maxlength="1" data-answer="р" data-direction="horizontal"></td>
+                    <td><input type="text" maxlength="1" data-answer="а" data-direction="horizontal"></td>
+                    <td><input type="text" maxlength="1" data-answer="м" data-direction="vertical"></td>
+                    <td><input type="text" maxlength="1" data-answer="м" data-direction="vertical"></td>
+                </tr>
+                <tr>
+                    <td class="number">3</td>
+                    <td><input type="text" maxlength="1" data-answer="т" data-direction="vertical"></td>
+                    <td><input type="text" maxlength="1" data-answer="и" data-direction="vertical"></td>
+                    <td><input type="text" maxlength="1" data-answer="в" data-direction="vertical"></td>
+                    <td><input type="text" maxlength="1" data-answer="и" data-direction="horizontal"></td>
+                    <td><input type="text" maxlength="1" data-answer="в" data-direction="horizontal"></td>
+                    <td><input type="text" maxlength="1" data-answer="е" data-direction="horizontal"></td>
+                    <td><input type="text" maxlength="1" data-answer="с" data-direction="horizontal"></td>
+                    <td><input type="text" maxlength="1" data-answer="о" data-direction="vertical"></td>
+                    <td><input type="text" maxlength="1" data-answer="е" data-direction="vertical"></td>
+                    <td><input type="text" maxlength="1" data-answer="с" data-direction="vertical"></td>
+                    <td><input type="text" maxlength="1" data-answer="т" data-direction="vertical"></td>
+                    <td><input type="text" maxlength="1" data-answer="в" data-direction="vertical"></td>
+                    <td><input type="text" maxlength="1" data-answer="а" data-direction="vertical"></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="questions">
+            <h2>Вопросы</h2>
+            <ol>
+                <li>1. Язык программирования, использующийся для создания веб-страниц. (HTML)</li>
+                <li>2. Функция в Python, которая используется для печати текста на экран. (print)</li>
+                <li>3. В каком языке программирования написан Android SDK? (Java)</li>
+                <li>4. Структура данных, работающая по принципу "первый пришёл — первый вышел". (Queue)</li>
+                <li>5. Что означает аббревиатура SQL? (Structured Query Language)</li>
+                <li>6. Процесс преобразования кода в исполняемый файл. (Компиляция)</li>
+                <li>7. Система управления версиями, которая используется для контроля исходного кода. (Git)</li>
+                <li>8. Стандартный язык для создания стилей веб-страниц. (CSS)</li>
+                <li>9. Паттерн проектирования, который подразумевает разделение на интерфейс и реализацию. (Абстрактная фабрика)</li>
+                <li>10. Принцип, позволяющий создать независимые модули кода. (Инкапсуляция)</li>
+                <li>11. Модуль, который обеспечивает доступ к базе данных в языке Python. (SQLAlchemy)</li>
+                <li>12. Процесс, который автоматизирует выполнение повторяющихся задач. (Скрипт)</li>
+                <li>13. Среда разработки для создания программ на языке C++. (Visual Studio)</li>
+                <li>14. Метод программирования, который использует небольшие функции для обработки данных. (Функциональное программирование)</li>
+                <li>15. Операционная система с открытым исходным кодом, основанная на ядре Linux. (Ubuntu)</li>
+                <li>16. Что такое система управления базами данных, в которой данные хранятся в виде таблиц? (Реляционная)</li>
+                <li>17. Тип данных, который может хранить только истинные и ложные значения. (Boolean)</li>
+                <li>18. Система, которая автоматически распределяет задачи между несколькими серверами. (Балансировщик нагрузки)</li>
+                <li>19. Как называется процесс поиска ошибок в программе? (Отладка)</li>
+                <li>20. Язык программирования, используемый для создания динамических веб-страниц. (JavaScript)</li>
+                <li>21. Функция в JavaScript, которая используется для асинхронного выполнения кода. (Promise)</li>
+                <li>22. Технология, позволяющая создавать веб-приложения с помощью JavaScript на серверной стороне. (Node.js)</li>
+                <li>23. Процесс, который позволяет проверять корректность программы. (Тестирование)</li>
+                <li>24. Что такое искусственный интеллект, имитирующий процесс обучения у человека? (Машинное обучение)</li>
+                <li>25. Принцип работы алгоритмов, основанных на случайных данных. (Случайный поиск)</li>
+                <li>26. Форма хранения данных, упрощающая доступ к ним. (Кэш)</li>
+                <li>27. Система для отслеживания ошибок и производительности веб-приложений. (New Relic)</li>
+                <li>28. Структура данных, которая позволяет хранить пары ключ-значение. (Словарь)</li>
+                <li>29. Среда разработки для создания приложений на языке Java. (Eclipse)</li>
+                <li>30. Функция, которая вызывается при возникновении исключения в программе. (Обработчик ошибок)</li>
+            </ol>
+        </div>
+
+        <button id="checkAnswers">Проверить ответы</button>
+        <p id="result"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
