@@ -3,62 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Кроссворд на 30 вопросов</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        .crossword-container {
-            margin-bottom: 20px;
-        }
-        table {
-            border-collapse: collapse;
-        }
-        td {
-            padding: 5px;
-            text-align: center;
-            border: 1px solid #ddd;
-            position: relative;
-        }
-        input {
-            width: 2em;
-            height: 2em;
-            text-align: center;
-            font-size: 1.5em;
-            border: 1px solid #ccc;
-        }
-        .number {
-            font-size: 0.8em;
-            color: #555;
-            position: absolute;
-            top: 0;
-            left: 0;
-            padding: 2px;
-            background: #f9f9f9;
-            border-bottom: 1px solid #ddd;
-            border-right: 1px solid #ddd;
-        }
-    </style>
+    <title>Кроссворд с нумерацией</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Кроссворд на 30 вопросов</h1>
 
-        <div class="crossword-container">
-            <table id="crossword">
-                
-            </table>
-        </div>
+<h1>Кроссворд с нумерацией</h1>
 
-        <div class="questions">
-            <h2>Вопросы</h2>
-            <ol>
-                
-            </ol>
-        </div>
-
-        <button id="checkAnswers">Проверить ответы</button>
-        <p id="result"></p>
+<div class="container">
+    <!-- Блок с вопросами -->
+    <div id="questions">
+        <h2>Горизонталь</h2>
+        <ol>
+            <li>1. Процессорный ресурс для выполнения команд</li>
+            <li>2. Блок кода, выполняющий определенную задачу</li>
+            <li>3. Структура данных для хранения набора элементов</li>
+            <li>5. Метод, при котором функция вызывает сама себя</li>
+            <li>8. Текстовый редактор, используемый программистами</li>
+            <li>11. Технология виртуализации серверов и приложений</li>
+            <li>13. Проццес нахождения и исправления ошибок в коде</li>
+            <li>14. Система контроля версий</li>
+            <li>15. Настройка, расширяющая его функциональность</li>
+            <li>16. Способ передачи данных через интернет</li>
+            <li>18. Совокупность инструкций для выполнения задачи</li>
+            <li>21. Процесс преобразования исходного кода в машинный код</li>
+            <li>22. Модель данных, состоящая из узлов и связей между ними</li>
+            <li>23. Программа для управления БД</li>
+        </ol>
+        <h2>Вертикаль</h2>
+        <ol>
+            <li>1. Стурктура, выполняющая набор инструкций несколько раз</li>
+            <li>2. Структура для отображения содержимого веб-страниц</li>
+            <li>4. Устройство, предоставляющее услуги другим компьютерам в сети</li>
+            <li>6. Переменная, содержащая только одно из двух возможных значений</li>
+            <li>7. Шаблон для создания объектов в ООП</li>
+            <li>9. Способ хранения и доступа данным с использованием индексов</li>
+            <li>10. Проццес проверки программы на наличие уязвимостей</li>
+            <li>12. Служба, позволяющая управлять файлами удаленно через интернет</li>
+            <li>17. Механизм повторного использования кода, связанный с классами</li>
+            <li>19. Программный код выполняемый на стороне клиента</li>
+            <li>20. Программа для защиты компьютера от вирусов</li>
+        </ol>
+        <button id="check-answers">Проверить ответы</button>
+        <div id="result"></div>
     </div>
 
-    <script src="script.js"></script>
+    <!-- Блок с кроссвордом -->
+    <div id="crossword-container">
+        <table id="crossword"></table>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
 </body>
 </html>

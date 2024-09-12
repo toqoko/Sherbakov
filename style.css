@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 80%;
+}
+
+#questions {
+    width: 40%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+#questions h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#questions ol {
+    padding-left: 20px;
+}
+
+#questions li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+#crossword-container {
+    width: 58%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+table {
+    border-spacing: 4px;
+    margin: 20px auto;
+    background-color: #fff;
+}
+
+td {
+    width: 40px;
+    height: 40px;
+    position: relative;
+}
+
+input[type="text"] {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    /* background-color: #fafafa; */
+}
+
+input[type="text"]:focus {
+    border-color: #333;
+}
+
+input.inactive {
+    background-color: #d0d0d0;
+    border: 1px solid #d0d0d0;
+}
+
+.inactive {
+    background-color: #e0e0e0;
+}
+
+#check-answers {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+#check-answers:hover {
+    background-color: #0056b3;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.correct {
+    background-color: #d4edda; /* Светло-зелёный цвет для правильных ответов */
+    border: 1px solid #c3e6cb;
+}
+
+.incorrect {
+    background-color: #f8d7da; /* Светло-красный цвет для неправильных ответов */
+    border: 1px solid #f5c6cb;
+}
+
+.default {
+    background-color: #fafafa; /* Цвет по умолчанию для полей ввода */
+}
+
+.number {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    font-size: 10px;
+    color: #333;
+}
+
+li {
+    list-style-type: none;
+}
