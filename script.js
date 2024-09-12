@@ -92,12 +92,10 @@ function createCrossword(crosswordData, wordNumbers) {
     });
 }
 
-// Функция для проверки ответов
 function checkAnswers() {
     const inputs = document.querySelectorAll('input[type="text"]:not(.inactive)');
     let allCorrect = true;
 
-    // Затем применяем стили в зависимости от правильности ответа
     inputs.forEach(input => {
         const userAnswer = input.value.toUpperCase();
         const correctAnswer = input.dataset.correctAnswer;
@@ -122,8 +120,6 @@ function checkAnswers() {
     }
 }
 
-// Создаем кроссворд с нумерацией
 createCrossword(crosswordData, wordNumbers);
 
-// Добавляем событие на кнопку проверки
 document.getElementById('check-answers').addEventListener('click', checkAnswers);
