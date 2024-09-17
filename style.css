@@ -90,8 +90,7 @@ input.inactive {
     background-color: #e0e0e0;
 }
 
-#check-answers {
-    background-color: #007bff;
+button {
     color: white;
     padding: 10px 20px;
     border: none;
@@ -99,10 +98,6 @@ input.inactive {
     cursor: pointer;
     font-size: 16px;
     margin-top: 20px;
-}
-
-#check-answers:hover {
-    background-color: #0056b3;
 }
 
 #result {

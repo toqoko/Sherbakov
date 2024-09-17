@@ -120,6 +120,16 @@ function checkAnswers() {
     }
 }
 
+function enterAnswers() {
+    const inputs = document.querySelectorAll('input[type="text"]:not(.inactive)');
+
+    inputs.forEach(input => {
+        const correctAnswer = input.dataset.correctAnswer;
+        input.value = correctAnswer
+    });
+}
+
 createCrossword(crosswordData, wordNumbers);
 
 document.getElementById('check-answers').addEventListener('click', checkAnswers);
+document.getElementById('enter-answers').addEventListener('click', enterAnswers);
